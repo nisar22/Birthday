@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap");
+
+body,
+html {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-snap-type: y mandatory;
+}
+
+body {
+  min-height: 100vh;
+
+  /* atop an off-white background include a pattern using the star icon created for the project */
+  /* background: url('data:image/svg+xml;utf8,<svg opacity="0.15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 15" width="160" height="150"><g transform="translate(1 1)" stroke-width="2" stroke="%23ffc928" stroke-linecap="round" stroke-linejoin="round" fill="%23ffc928"><path d="M 0 4.5 l 4.5 0 l 2.5 -4.5 l 2.5 4.5 l 4.5 0 l -3.5 3.5 l 1.5 5 l -5 -2.5 l -5 2.5 l 1.5 -5 l -3.5 -3.5"></path></g></svg>'),
+    hsl(0, 0%, 96%); */
+  background-size: 40px;
+}
+
+section {
+  height: 100vh;
+
+  /* center the canvas in the viewport */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Snap the window section */
+  scroll-snap-align: start;
+
+  position: relative;
+}
+
+section:not(:last-of-type)::after {
+  content: url("./images/down-arrow.png");
+  position: absolute;
+  bottom: 1rem;
+}
+
+.star-section {
+  background: url('data:image/svg+xml;utf8,<svg opacity="0.15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 15" width="160" height="150"><g transform="translate(1 1)" stroke-width="2" stroke="%23ffc928" stroke-linecap="round" stroke-linejoin="round" fill="%23ffc928"><path d="M 0 4.5 l 4.5 0 l 2.5 -4.5 l 2.5 4.5 l 4.5 0 l -3.5 3.5 l 1.5 5 l -5 -2.5 l -5 2.5 l 1.5 -5 l -3.5 -3.5"></path></g></svg>'),
+    hsl(0, 0%, 96%);
+  background-size: 40px;
+}
+
+.star-section img {
+
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.candle-section {
+  background-color: #100328;
+  color: #ddd;
+}
+
+.bday-wish-section {
+  /* background-color: #097770; */
+  background-color: #efefef;
+  color: white;
+  flex-direction: column;
+  /* background-image: url('https://images.pexels.com/photos/5725882/pexels-photo-5725882.jpeg'); */
+}
+
+.bday-wish-section h1 {
+  order: 2;
+  /* font-family: 'poppins', sans-serif; */
+  font-family: "Balsamiq Sans", cursive;
+  font-size: 10vw;
+  text-transform: uppercase;
+  background: url("https://cdn.pixabay.com/photo/2017/03/25/18/06/color-2174065_960_720.png");
+  /* background: url('https://image.freepik.com/free-vector/gradient-dynamic-geometric-shapes-background_52683-19148.jpg'); */
+  background-size: contain;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.bday-wish-section .tl-decoration {
+  position: absolute;
+  width: 30px;
+  top: 0;
+  left: 0.5rem;
+}
+
+.bday-wish-section .bl-decoration {
+  position: absolute;
+  width: 100px;
+  bottom: 0;
+  left: 0.5rem;
+}
+
+.bday-wish-section .br-decoration {
+  position: absolute;
+  width: 70px;
+  bottom: 0;
+  right: 0;
+}
+
+.bday-card-section {
+  /* background-color: #fde3a7; */
+  background-color: #f16d6d;
+}
+/*  */
+
+/* candle */
+
+.velas {
+  background: #ffffff;
+  border-radius: 10px;
+  margin-right: 0.5rem;
+  /* position: absolute;
+  top: 228px;
+  left: 50%;
+  margin-left: -2.4px;
+  margin-top: -8.33333333px; */
+  width: 5px;
+  height: 45px;
+  /* transform: translateY(-300px); */
+  backface-visibility: hidden;
+  animation: in 500ms 6s ease-out forwards;
+}
+.velas:after,
+.velas:before {
+  background: rgba(255, 0, 0, 0.4);
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2.22222222px;
+}
+.velas:after {
+  top: 25%;
+  left: 0;
+}
+.velas:before {
+  top: 45%;
+  left: 0;
+}
+
+/* ============================================== Fire
+*/
+
+.fuego {
+  border-radius: 100%;
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  margin-left: -2.6px;
+  width: 6.66666667px;
+  height: 18px;
+}
+.fuego:nth-child(1) {
+  animation: fuego 2s infinite;
+}
+.fuego:nth-child(2) {
+  animation: fuego 1.5s infinite;
+}
+.fuego:nth-child(3) {
+  animation: fuego 1s infinite;
+}
+.fuego:nth-child(4) {
+  animation: fuego 0.5s infinite;
+}
+.fuego:nth-child(5) {
+  animation: fuego 0.2s infinite;
+}
+
+/* ============================================== Animation Fire
+*/
+
+@keyframes fuego {
+  0%,
+  100% {
+    background: rgba(254, 248, 97, 0.5);
+    box-shadow: 0 0 40px 10px rgba(248, 233, 209, 0.2);
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    background: rgba(255, 50, 0, 0.1);
+    box-shadow: 0 0 40px 20px rgba(248, 233, 209, 0.2);
+    transform: translateY(-20px) scale(0);
+  }
+}
+
+@keyframes in {
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* ==== Candle Alignment */
+
+.candle-wrapper {
+  display: flex;
+  width: 500px;
+  justify-content: space-evenly;
+}
+
+.candle-wrapper .candle-container {
+  display: flex;
+  position: relative;
+}
+
+.tilted-candle {
+  transform: rotate(90deg);
+  position: absolute;
+  left: 1rem;
+}
+
+.tilted-candle .velas {
+  height: 55px;
+}
+
+/* ==== Candle Alignment End*/
+
+/* candle end */
+
+.ml3 {
+  font-weight: 900;
+  font-size: 3.5em;
+}
+
+.ml16 {
+  color: #402d2d;
+  padding: 40px 0;
+  font-weight: 800;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  overflow: hidden;
+}
+
+.ml16 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+#canvas {
+  z-index: 2;
+}
+
+body::-webkit-scrollbar {
+  width: 0.5em;
+  background-color: rgba(0, 0, 0, 0.1);
+  display: none;
+}
+
+/* body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+} */
+
+body::-webkit-scrollbar-thumb {
+  background-color: #999;
+  /* outline: 1px solid green; */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  color: white;
+
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+}

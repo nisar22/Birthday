@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="I'm so fricking happy you were born. Happy Birthday to the one I can actually tolerate. Wish you many many happy returns of the day, Anandita!!">
+
+    <meta property="og:image"
+        content="https://i2.wp.com/www.onlinecakencr.com/image/cache/catalog/Designer%20Cake/red%20rose%20cake-250x250.png">
+
+    <title>Happy Birthday Anandita</title>
+    <link rel="icon" href="https://www.flaticon.com/svg/static/icons/svg/1404/1404940.svg" type="image/gif"
+        sizes="16x16">
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./card.css">
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <script src="js/modernizr.custom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/1.1.25/howler.min.js"></script>
+</head>
+
+<body>
+    <!-- canvas in which to draw the star -->
+    <section class="star-section">
+        <canvas width="500" height="500"></canvas>
+        <img src="./images/fullscreen.png" alt="" onclick="goFullScreen()" style="opacity: 0.8;">
+    </section>
+
+    <section class="bday-wish-section" style="position: relative;">
+
+        <canvas id="canvas" style="position: absolute;"></canvas>
+
+        <h1 class="happy-birthday-text">
+            Happy B'Day Bro
+        </h1>
+
+        <img src="https://www.flaticon.com/svg/static/icons/svg/1075/1075855.svg" alt="" style="width: 128px;">
+
+        <!-- Orange Flower -->
+        <img class="tl-decoration" style="top:1rem; left: 1rem;" src="./images/black.png" alt="">
+        <img class="tl-decoration" style="top:1rem; left: 8.5rem;" src="./images/black.png" alt="">
+
+        <!-- Red flower with leaf -->
+        <img class="tl-decoration" style="top:3.5rem; left: 3.5rem;" src="./images/floral.png" alt="">
+
+        <!-- Cherry blossom -->
+        <img class="tl-decoration" style="top:1rem; left: 3.5rem;" src="./images/cherry-blossom.png" alt="">
+
+        <!-- Round Red flower -->
+        <img class="tl-decoration" style="top:1rem; left: 6rem;" src="./images/flower.png" alt="">
+
+        <!-- Pink cosmos -->
+        <img class="tl-decoration" style="top:3.5rem; left: 1rem;" src="./images/pink-cosmos.png" alt="">
+
+        <!-- Rose -->
+        <img class="tl-decoration" style="top:6rem; left: 1rem;" src="./images/rose.png" alt="">
+
+
+        <img class="bl-decoration" style="width: 200px; left: 0;" src="./images/tree.png" alt="">
+        <img class="bl-decoration" style="width: 150px; bottom: -1rem; left: 10rem;" src="./images/park.png" alt="">
+        <img class="bl-decoration" style="width: 50px; left: 19rem;" src="./images/reeds.png" alt="">
+
+        <img class="br-decoration" src="./images/butterflies.png" alt="">
+        <img class="br-decoration" style="right: 5rem;" src="./images/flowers.png" alt="">
+
+    </section>
+
+    <section class="candle-section" style="flex-direction: column;">
+
+        <div class="candle-wrapper" style="margin: 5em 0;">
+            <div class="candle-container">
+                <div class="velas">
+                    <div class="fuego"></div>
+                    <div class="fuego"></div>
+                    <div class="fuego"></div>
+                    <div class="fuego"></div>
+                    <div class="fuego"></div>
+                </div>
+                <div class="velas">
+                    <div class="fuego"></div>
+                    <div class="fuego"></div>
+                    <div class="fuego"></div>
+                    <div class="fuego"></div>
+                    <div class="fuego"></div>
+                </div>
+                <div class="velas">
+                    <div class="fuego"></div>
+                    <div class="fuego"></div>
+                    <div class="fuego"></div>
+                    <div class="fuego"></div>
+                    <div class="fuego"></div>
+                </div>
+                <div class="velas">
+                    <div class="fuego"></div>
+                    <div class="fuego"></div>
+                    <div class="fuego"></div>
+                    <div class="fuego"></div>
+                    <div class="fuego"></div>
+                </div>
+                <div class="tilted-candle">
+                    <div class="velas ">
+                        <div class="fuego"></div>
+                        <div class="fuego"></div>
+                        <div class="fuego"></div>
+                        <div class="fuego"></div>
+                        <div class="fuego"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="candle-container">
+                <div class="velas">
+                    <div class="fuego"></div>
+                    <div class="fuego"></div>
+                    <div class="fuego"></div>
+                    <div class="fuego"></div>
+                    <div class="fuego"></div>
+                </div>
+                <div class="velas">
+                    <div class="fuego"></div>
+                    <div class="fuego"></div>
+                    <div class="fuego"></div>
+                    <div class="fuego"></div>
+                    <div class="fuego"></div>
+                </div>
+                <div class="velas">
+                    <div class="fuego"></div>
+                    <div class="fuego"></div>
+                    <div class="fuego"></div>
+                    <div class="fuego"></div>
+                    <div class="fuego"></div>
+                </div>
+                <div class="velas">
+                    <div class="fuego"></div>
+                    <div class="fuego"></div>
+                    <div class="fuego"></div>
+                    <div class="fuego"></div>
+                    <div class="fuego"></div>
+                </div>
+                <div class="tilted-candle">
+                    <div class="velas ">
+                        <div class="fuego"></div>
+                        <div class="fuego"></div>
+                        <div class="fuego"></div>
+                        <div class="fuego"></div>
+                        <div class="fuego"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="candle-container">
+                <div class="velas">
+                    <div class="fuego"></div>
+                    <div class="fuego"></div>
+                    <div class="fuego"></div>
+                    <div class="fuego"></div>
+                    <div class="fuego"></div>
+                </div>
+                <div class="velas">
+                    <div class="fuego"></div>
+                    <div class="fuego"></div>
+                    <div class="fuego"></div>
+                    <div class="fuego"></div>
+                    <div class="fuego"></div>
+                </div>
+                <div class="velas">
+                    <div class="fuego"></div>
+                    <div class="fuego"></div>
+                    <div class="fuego"></div>
+                    <div class="fuego"></div>
+                    <div class="fuego"></div>
+                </div>
+                <div class="velas">
+                    <div class="fuego"></div>
+                    <div class="fuego"></div>
+                    <div class="fuego"></div>
+                    <div class="fuego"></div>
+                    <div class="fuego"></div>
+                </div>
+                <div class="tilted-candle">
+                    <div class="velas ">
+                        <div class="fuego"></div>
+                        <div class="fuego"></div>
+                        <div class="fuego"></div>
+                        <div class="fuego"></div>
+                        <div class="fuego"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="candle-container">
+                <div class="velas">
+                    <div class="fuego"></div>
+                    <div class="fuego"></div>
+                    <div class="fuego"></div>
+                    <div class="fuego"></div>
+                    <div class="fuego"></div>
+                </div>
+                <div class="velas">
+                    <div class="fuego"></div>
+                    <div class="fuego"></div>
+                    <div class="fuego"></div>
+                    <div class="fuego"></div>
+                    <div class="fuego"></div>
+                </div>
+                <div class="velas">
+                    <div class="fuego"></div>
+                    <div class="fuego"></div>
+                    <div class="fuego"></div>
+                    <div class="fuego"></div>
+                    <div class="fuego"></div>
+                </div>
+                <div class="velas">
+                    <div class="fuego"></div>
+                    <div class="fuego"></div>
+                    <div class="fuego"></div>
+                    <div class="fuego"></div>
+                    <div class="fuego"></div>
+                </div>
+                <div class="tilted-candle">
+                    <div class="velas ">
+                        <div class="fuego"></div>
+                        <div class="fuego"></div>
+                        <div class="fuego"></div>
+                        <div class="fuego"></div>
+                        <div class="fuego"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="candle-container">
+                <div class="velas">
+                    <div class="fuego"></div>
+                    <div class="fuego"></div>
+                    <div class="fuego"></div>
+                    <div class="fuego"></div>
+                    <div class="fuego"></div>
+                </div>
+                <div class="velas">
+                    <div class="fuego"></div>
+                    <div class="fuego"></div>
+                    <div class="fuego"></div>
+                    <div class="fuego"></div>
+                    <div class="fuego"></div>
+                </div>
+                <div class="velas">
+                    <div class="fuego"></div>
+                    <div class="fuego"></div>
+                    <div class="fuego"></div>
+                    <div class="fuego"></div>
+                    <div class="fuego"></div>
+                </div>
+                <div class="velas">
+                    <div class="fuego"></div>
+                    <div class="fuego"></div>
+                    <div class="fuego"></div>
+                    <div class="fuego"></div>
+                    <div class="fuego"></div>
+                </div>
+				<div class="tilted-candle">
+                    <div class="velas ">
+                        <div class="fuego"></div>
+                        <div class="fuego"></div>
+                        <div class="fuego"></div>
+                        <div class="fuego"></div>
+                        <div class="fuego"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h1 class="ml3" style="text-align: center;">wishing you abundance on your birthday</h1>
+
+    </section>
+
+    <section class="bday-card-section" style="position: relative;">
+        <div class="card">
+            <div class="imgBox">
+                <div class="bark"></div>
+                <!-- <img src="https://image.ibb.co/fYzTrb/lastofus.jpg"> -->
+                <img src="./images/bday/hbd_cover.jpg" alt="happy birthday">
+            </div>
+            <div class="details">
+                <h4 class="color1">HAPPY BIRTHDAY</h2>
+                    <h4 class="color2 margin" style="font-size: 18px; margin-bottom: 2rem;">( from the most amazing
+                        person you know )</h3>
+                        <p>Hey Bro,</p>
+                        <p>Way to go! You made it through another</p>
+                        <p>year! May this birthday brings you </p>
+                        <p>lots of happiness and peace of mind</p>
+                        <p>the stars. Hope your birthday is just</p>
+                        <p>like you... totally freaking awesome 🤗</p>
+                        <p>‎‎‎</p>
+                        <p>Sending you buckets of joy and big</p>
+                        <p>bear hugs on your birthday 🥰</p>
+                        <p class="text-right">Happy Birthday, Anandita!</p>
+                        <p class="text-right">♥ Nisar</p>
+            </div>
+        </div>
+    </section>
+
+    <section style="overflow: hidden; background-color: #29011c;">
+        <ul id="elasticstack" class="elasticstack">
+            <li><img src="./images/us/beach.jpg" alt="01" />
+                <h5>Never want to stop making memories</h5>
+            </li>
+            <li><img src="./images/us/new_year.jpg" alt="03" />
+                <h5>and so, the adventure begins...</h5>
+            </li>
+            <li><img src="./images/us/mcd.jpg" alt="04" />
+                <h5>a kid hiding lots of maturity inside</h5>
+            </li>
+            <li><img src="./images/us/ooty.jpg" alt="02" />
+                <h5 class="long-text">shishyaa ko Anshu baba ka aashirwaad</h5>
+            </li>
+            <li><img src="./images/us/brush.jpg" alt="06" />
+                <h5 class="long-text">On this day, a queen was born</h5>
+            </li>
+            <li><img src="./images/us/goa.jpg" alt="04" />
+                <h5>bachhus! bachhus! bachhus!</h5>
+            </li>
+            <li><img src="./images/us/goa_room.jpg" alt="04" />
+                <h5>ye kiske palle pad gayi main xD</h5>
+            </li>
+            <li><img src="./images/us/beach_hand.jpg" alt="05" />
+                <h5 class="long-text">always classy, never trashy and a lil bit sassy</h5>
+            </li>
+            <li><img src="./images/us/beach_hug.jpg" alt="04" />
+                <h5 style="text-align: center;">Happy Birthday Diva</h5>
+            </li>
+        </ul>
+    </section>
+
+    <section style="flex-direction: column; background-color: #008577;">
+        <h1 class="ml16" style="color: white">Made with love</h1>
+        <h1 class="ml16" style="color: white"> -Your unofficial Bro, Nisar</h1>
+    </section>
+
+    <div class="overlay" onclick="goFullScreen()">click to experience</div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous"></script>
+
+    <script>
+        if (localStorage.getItem('isFirstExperienceDone')) {
+            debugger
+            $('.overlay').css('display', 'none')
+        }
+    </script>
+
+    <script src="https://unpkg.com/zdog@1/dist/zdog.dist.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"
+        integrity="sha512-/DXTXr6nQodMUiq+IUJYCt2PPOUjrHJ9wFrqpJ3XkgPNOZVfMok7cRw6CSxyCQxXn6ozlESsSh1/sMCTF1rL/g=="
+        crossorigin="anonymous"></script> -->
+
+    <script src="js/draggabilly.pkgd.min.js"></script>
+    <script src="js/elastiStack.js"></script>
+    <script src="https://unpkg.com/animejs@3.0.1/lib/anime.min.js"></script>
+    <script src="js/bdayExplosion.js"></script>
+    <script src="./js/script.js"></script>
+    <script>
+        new ElastiStack(document.getElementById('elasticstack'));
+
+        function goFullScreen() {
+            if (document.fullscreen) {
+                document.exitFullscreen()
+                return
+            }
+            $('.overlay').fadeOut(2500)
+            document.documentElement.requestFullscreen()
+            localStorage.setItem('isFirstExperienceDone', true)
+        }
+    </script>
+</body>
+
+</html>
